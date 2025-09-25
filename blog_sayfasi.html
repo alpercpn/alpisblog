@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alper Çapan — Kişisel Blog</title>
+  <meta name="description" content="Alper Çapan'ın kişisel blogu: hakkında, projeler, yazılar, medya ve iletişim." />
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4d6.svg" />
+
+  <!-- BOOTSTRAP CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { min-height: 100vh; }
+    .avatar {
+      width: 120px; height: 120px; object-fit: cover; border-radius: 50%;
+      box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    }
+    .section-title { letter-spacing: .3px; }
+    .post-card img { height: 160px; object-fit: cover; }
+    .video-wrapper { position: relative; padding-top: 56.25%; }
+    .video-wrapper iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    footer a { text-decoration: none; }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#hero">ALPER ÇAPAN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcol" aria-controls="navcol" aria-expanded="false" aria-label="Menüyü Aç/Kapat">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navcol" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">Hakkımda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projeler</a></li>
+          <li class="nav-item"><a class="nav-link" href="#media">Medya</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">İletişim</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / INTRO -->
+  <header id="hero" class="py-5 mt-5 bg-light border-bottom">
+    <div class="container py-4">
+      <div class="row align-items-center g-4">
+        <div class="col-md-3 text-center text-md-start">
+          <img src="images/pp.jpg" alt="Profil fotoğrafı" class="avatar" />
+        </div>
+        <div class="col-md-9">
+          <h1 class="display-6 mb-2">Merhaba! Ben <span class="text-primary">Alper</span> 👋</h1>
+          <p class="lead mb-3">Bilgisayar Mühendisliği öğrencisiyim. Web geliştirme, .NET MAUI ve veri tabanı tasarımıyla ilgileniyorum. Bu sitede projelerimi, yazdığım notları ve videolarımı bulacaksınız.</p>
+          <div class="d-flex gap-2 flex-wrap">
+            <!-- Sosyal bağlantılar: kendi linklerinle değiştir -->
+            <a href="https://github.com/alpercpn" class="btn btn-dark" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/alper-çapan-abb1a829b" class="btn btn-outline-primary" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://twitter.com/alpercpnn" class="btn btn-outline-secondary" target="_blank" rel="noopener">X / Twitter</a>
+            <a href="#contact" class="btn btn-primary">İletişim</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HAKKIMDA -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">Hakkımda</h2>
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <p>Şimdiye kadar pek çok küçük/orta ölçekli projede yer aldım. Hedefim; modern web teknolojileriyle erişilebilir, hızlı ve ölçeklenebilir uygulamalar geliştirmek. Başlıca becerilerim: <strong>HTML</strong>, <strong>CSS/Bootstrap</strong>, <strong>JavaScript</strong>, <strong>C#</strong>, <strong>.NET MAUI</strong>, <strong>SQL</strong>.</p>
+          <ul>
+            <li>Takım çalışmasına uyumlu, dokümantasyona önem veren.</li>
+            <li>UI/UX ve performans optimizasyonuna meraklı.</li>
+            <li>Öğrenmeye ve üretmeye hevesli.
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJELER -->
+  <section id="projects" class="py-5 bg-light border-top border-bottom">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">Projeler</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Blog projesi görseli">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Kişisel Blog (Bu Site)</h5>
+              <p class="card-text">Bootstrap 5 kullanılarak responsive bir kişisel blog. Navbar, gömülü medya, kart bazlı yazılar ve iletişim formu içerir.</p>
+              <div class="mt-auto">
+                <a href="#blog" class="btn btn-primary">Yazılara Git</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="MAUI app görseli">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Servis Yönetim Uygulaması</h5>
+              <p class="card-text">.NET MAUI tabanlı müşteri/servis takip uygulaması. API'den veri çekme, detay sayfası ve WhatsApp paylaşım özelliği.</p>
+              <div class="mt-auto">
+                <a href="#contact" class="btn btn-outline-secondary">Detay Sor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDYA -->
+  <section id="media" class="py-5">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">Medya</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <figure class="figure w-100">
+            <img width="560" height="315" src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop" class="figure-img img-fluid rounded" alt="Çalışma masası fotoğrafı" />
+          </figure>
+        </div>
+        <div class="col-lg-6">
+          <div class="video-wrapper rounded overflow-hidden shadow-sm">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vuvckBQ1bME?si=FOYJPm-GNtXZ3xsi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- İLETİŞİM -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">İletişim</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Ad Soyad</label>
+              <input id="name" type="text" class="form-control" placeholder="Adınız" required />
+              <div class="invalid-feedback">Lütfen adınızı girin.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E‑posta</label>
+              <input id="email" type="email" class="form-control" placeholder="ornek@mail.com" required />
+              <div class="invalid-feedback">Geçerli bir e‑posta girin.</div>
+            </div>
+            <div class="mb-3">
+              <label for="msg" class="form-label">Mesaj</label>
+              <textarea id="msg" class="form-control" rows="4" placeholder="Merhaba..." required></textarea>
+              <div class="invalid-feedback">Mesaj boş olamaz.</div>
+            </div>
+            <button class="btn btn-primary" type="submit">Gönder</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 bg-body-tertiary rounded border h-100">
+            <h5 class="mb-2">İşbirliği için ulaşın</h5>
+            <p class="mb-0">E‑posta: <a href="mailto:alpercapnn@gmail.com">alpercapnn@gmail.com</a></p>
+            <p class="mb-0">Tel: +90 551 897 3733</p>
+            <p class="mb-0">Konum: Isparta, Türkiye</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-white mt-auto">
+    <div class="container small d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <div>
+        <span id="year"></span> &copy; Tüm hakları saklıdır.
+      </div>
+      <div>
+        <strong>Alper Çapan</strong> —  <strong>Tel: +90 551 897 3733</strong>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Bootstrap form doğrulama örneği
+    (() => {
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+</body>
+</html>
