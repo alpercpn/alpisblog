@@ -27,7 +27,7 @@ Bootstrap 5 kullanılarak hazırlanmıştır ve GitHub Pages üzerinde yayınlan
 
 ## 🚀 Yayın Adresi
 Projemi buradan görebilirsiniz:  
-👉 [https://alpercpn.github.io/alpisblog/](https://alpercpn.github.io/alpisblog/)
+👉 [https://alpisblog.vercel.app/](https://alpisblog.vercel.app)
 
 ---
 
