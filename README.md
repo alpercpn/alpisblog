@@ -32,7 +32,7 @@ Projemi buradan görebilirsiniz:
 ---
 
 ## 📷 Önizleme
-![Önizleme](site.png)
+![Önizleme](pp.jpg)
 
 ---
 
