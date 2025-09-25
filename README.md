@@ -38,4 +38,5 @@ Projemi buradan görebilirsiniz:
 
 ## ✍️ Geliştirici
 - **Ad Soyad:** Alper Çapan  
-- **Öğrenci No:** 2025xxxxx  
+- **Öğrenci No:** 2211012078
+  
